@@ -241,7 +241,7 @@
     max-height: 35vh;
     padding: 40px 20px;
     position: relative;
-    z-index: 1; /* Ensure it is above the ::before element */
+    z-index: 1; 
 }
 
 .headquarter::before {
@@ -252,7 +252,7 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(43, 43, 43, 1) 0%, rgba(43, 43, 43, 0) 100%);
-    z-index: -1; /* Ensure it is below the headquarter content */
+    z-index: -1; 
 }
 
 .headquarter::after {
@@ -268,7 +268,7 @@
 .headquarter h1 {
     padding-top: 40px;
     text-align: center;
-    z-index: 2; /* Ensure it is above the ::before element */
+    z-index: 2; 
 }
 
 .image-circles {
@@ -276,7 +276,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    z-index: 2; /* Ensure it is above the ::before element */
+    z-index: 2; 
 }
 
 .circle {
@@ -298,7 +298,7 @@
 }
 
 .circle.satu img {
-    padding-top: 45px; /* Adjust the top padding for the specific image */
+    padding-top: 45px; 
 }
 
 @media (max-width: 1187px) {
@@ -321,7 +321,7 @@
     }
     
     .circle.satu img {
-        padding-top: 45px; /* Adjust the top padding for the specific image */
+        padding-top: 45px; 
     }
 }
 
@@ -345,7 +345,7 @@
     }
     
     .circle.satu img {
-        padding-top: 30px; /* Adjust the top padding for the specific image */
+        padding-top: 30px;
     }
 }
 
@@ -369,7 +369,7 @@
     }
     
     .circle.satu img {
-        padding-top: 20px; /* Adjust the top padding for the specific image */
+        padding-top: 20px;
     }
 }
 
@@ -383,7 +383,7 @@
         max-height: 35vh;
         padding: 40px 20px;
         position: relative;
-        z-index: 1; /* Ensure it is above the ::before element */
+        z-index: 1; 
     }
 }
 /* Message Us */
