@@ -96,6 +96,35 @@
     margin: 4px 0;
 }
 
+@media (max-width: 649px) {
+
+    .menu li {
+        margin-right: 10px;
+        border-left-width: 1px;
+        padding-left: 10px;
+    }
+    .menu li:first-child {
+        border-right-width: 0;
+    }
+}
+
+@media (max-width: 591px) {
+
+    .menu{
+
+        font-size:60%;
+    }
+
+    .menu li {
+        margin-right: 3%;
+        border-left-width: 1px;
+        padding-left: 3%;
+    }
+    .menu li:first-child {
+        border-right-width: 0;
+    }
+}
+
 /* Welcome Page */
 .welcomePage {
     height: 100vh;
@@ -181,6 +210,25 @@
 
 .ourProfile p {
     padding: 0 10%;
+}
+
+@media (max-width: 1190px) {
+    .ourProfile {
+        min-height: 90vh;
+    }
+}
+
+@media (max-width: 672px) {
+    .ourProfile {
+        min-height: 100vh;
+        height: 100vh;
+    }
+}
+@media (max-width: 455px) {
+    .ourProfile {
+        min-height: 130vh;
+        height: 100vh;
+    }
 }
 
 /* Headquarter */
@@ -325,6 +373,19 @@
     }
 }
 
+@media (max-width: 455px) {
+    .headquarter {
+        padding-top: 70px;
+        background-color: rgb(237, 237, 237);
+        color: rgb(255, 255, 255);
+        min-height: 50vh;
+        height: 30vh;
+        max-height: 35vh;
+        padding: 40px 20px;
+        position: relative;
+        z-index: 1; /* Ensure it is above the ::before element */
+    }
+}
 /* Message Us */
 .messageUs {
     padding-top: 40px;
@@ -396,6 +457,8 @@
 }
 
 .form-group label {
+    padding-top: 10px;
+    padding-left: 5px;
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
