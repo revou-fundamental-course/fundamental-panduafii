@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bangla Sangam MN';
+    
+}
+
+/* html, body {
+    overflow-y: hidden; 
+} */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header */
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 7px;
+    margin: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.menu li {
+    margin-right: 20px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    padding-left: 10px;
+}
+
+.menu li:first-child {
+    border-left-width: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #808080;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: black;
+}
+
+.menu li img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+/* Welcome Page */
+.welcomePage {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(19, 67, 135);
+}
+
+.welcomePage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.welcomePage::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(43, 43, 43) 100%);
+}
+
+.sambutan {
+    position: absolute;
+    top: 13%;
+    left: 6%;
+    transform: translateX(-100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 20px;
+    animation: fadeInLeft 1.5s forwards;
+}
+
+@keyframes fadeInLeft {
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Our Profile */
+.ourProfile {
+    min-height: 60vh;
+    padding: 60px 40px;
+    background-color: rgb(43, 43, 43);
+    color: rgb(242, 242, 242);
+    max-height: 120vh;
+    height: 80vh;
+    position: relative;
+}
+
+.ourProfile::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(43, 43, 43) 100%);
+}
+
+.ourProfile .h2 {
+    width: 100%;
+    padding: 0 20%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-weight: 1000;
+}
+
+.ourProfile h3 {
+    width: 100%;
+    padding: 0 10%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.ourProfile p {
+    padding: 0 10%;
+}
+
+/* Headquarter */
+.headquarter {
+    padding-top: 70px;
+    background-color: rgb(237, 237, 237);
+    color: rgb(255, 255, 255);
+    min-height: 60vh;
+    height: 70vh;
+    max-height: 35vh;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1; /* Ensure it is above the ::before element */
+}
+
+.headquarter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(43, 43, 43, 1) 0%, rgba(43, 43, 43, 0) 100%);
+    z-index: -1; /* Ensure it is below the headquarter content */
+}
+
+.headquarter::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to top, rgba(43, 43, 43, 1) 0%, rgba(43, 43, 43, 0) 100%);
+}
+
+.headquarter h1 {
+    padding-top: 40px;
+    text-align: center;
+    z-index: 2; /* Ensure it is above the ::before element */
+}
+
+.image-circles {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    z-index: 2; /* Ensure it is above the ::before element */
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 8%;
+    border: 2px solid white;
+    justify-content: center;
+    background-color: rgb(31, 50, 90);
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.circle.satu img {
+    padding-top: 45px; /* Adjust the top padding for the specific image */
+}
+
+@media (max-width: 1187px) {
+    .circle {
+        width: 250px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 8%;
+        border: 2px solid white;
+        justify-content: center;
+        background-color: rgb(31, 50, 90);
+    }
+    
+    .circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 20px;
+    }
+    
+    .circle.satu img {
+        padding-top: 45px; /* Adjust the top padding for the specific image */
+    }
+}
+
+@media (max-width: 872px) {
+    .circle {
+        width: 250px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 8%;
+        border: 2px solid white;
+        justify-content: center;
+        background-color: rgb(31, 50, 90);
+    }
+    
+    .circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 20px;
+    }
+    
+    .circle.satu img {
+        padding-top: 30px; /* Adjust the top padding for the specific image */
+    }
+}
+
+@media (max-width: 637px) {
+    .circle {
+        width: 250px;
+        height: 95px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 8%;
+        border: 2px solid white;
+        justify-content: center;
+        background-color: rgb(31, 50, 90);
+    }
+    
+    .circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 20px;
+    }
+    
+    .circle.satu img {
+        padding-top: 20px; /* Adjust the top padding for the specific image */
+    }
+}
+
+/* Message Us */
+.messageUs {
+    padding-top: 40px;
+    background-color: rgba(43,43,43);
+    padding: 20px;
+    height: 60vh;
+    color: rgb(243, 243, 243);
+}
+
+.messageUs h2 {
+    text-align: left;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+
+.message-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.duaForm {
+    display: flex;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.radio-group label {
+    margin-right: 20px;
+}
+
+.messageUs form {
+    width: 48%;
+}
+
+.messageUs .message-display {
+    width: 48%;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.radio{
+    display: inline-flex;
+}
+
+.radio label{
+    margin-right: 20px;
+}
+
+.gender{
+    width: 20px!important;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color:rgb(238, 238, 238);
+    color: rgb(29, 29, 29);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: rgb(106, 106, 106);
+}
+
+/* Footer */
+.footer{
+    height: 60px;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 20px;
+    background-color: #a1a1a1;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 2000;
+}

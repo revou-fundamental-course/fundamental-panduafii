@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang di Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Exo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo" />
+            </div>
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="#ourProfile">Our Profile</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="#message">Message Us</a></li>
+            </ul>
+        </nav>
+    
+        <div class="welcomePage">
+            <div class="sambutan">
+                <h2 >Hi,<span id="greeting"></span> Welcome To Website</h2>
+                <h5>We are March, We are Solid!</h5>
+            </div>
+            <img src="img/image.jpg" alt="Logo">
+        </div>
+        
+        <div id="ourProfile" class="ourProfile">
+            <h2 class="h2">March Steel Industries is a leading iron and steel company, reinforcing the foundations of the construction and manufacturing industries for over two decades. Committed to quality and innovation, March Steel Industries has become a symbol of trust and reliability in the global market.</h2>
+            <h3>Our Profile:</h3>
+            <p>Founded in 2000 and headquartered in Jakarta, Indonesia, March Steel prioritizes integrity, sustainability, and continuous improvement. Utilizing cutting-edge technology and efficient processes, we ensure our products meet and exceed stringent industry standards.</p>
+            <h3>Vision and Mission:</h3>
+            <p>Our vision is to be the most respected leader in the steel industry, driving innovation and efficiency through technology and human resources. Our mission is to provide superior products and services, support sustainable infrastructure growth, and strengthen our communities.</p>
+        </div>
+        
+        <div class="headquarter">
+            <h1>Our Headquarter</h1>
+            <div class="image-circles">
+                <div class="circle satu"><img src="img/jakarta.png" alt="jakarta" class="satu"></div>
+                <div class="circle"><img src="img/surabaya.svg" alt="surabaya"></div>
+                <div class="circle"><img src="img/medan.svg" alt="medan"></div>
+            </div>
+        </div>
+        
+        <div class="messageUs" id="message">
+            <h2>Message Us</h2>
+            <div class="duaForm">
+                <form id="messageForm">
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="name" placeholder="Nama">
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Tanggal Lahir</label>
+                        <input type="date" id="dob" name="dob">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Jenis Kelamin</label>
+                        <div class=" radio">
+                            <input class="gender" type="radio" id="male" name="gender" value="Laki-Laki">
+                            <label for="male">Laki-Laki</label>
+                            <input class="gender" type="radio" id="female" name="gender" value="Perempuan">
+                            <label for="female">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" placeholder="Pesan"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="messageDisplay" class="message-display">
+                    <p><span id="currentTime"></span></p>
+                    <p><span id="displayName"></span></p>
+                    <p><span id="displayDob"></span></p>
+                    <p><span id="displayGender"></span></p>
+                    <p><span id="displayMessage"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h5>Created by Pandu</h5>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
